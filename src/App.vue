@@ -1,7 +1,7 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
  <h1>Bongani's Reaction Timer</h1>
- <button @click="start" :disabled="isPlaying">Play</button>
+ <button id="play" @click="start" :disabled="isPlaying">Play</button>
 <Block v-if="isPlaying" :delay="delay" @done="endGame"/>
 <Results v-if="showResults" :score="score" />
 </template>
